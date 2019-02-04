@@ -3,7 +3,7 @@ import React from "react";
 const Nav = () => (
   <div>
     <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
-      <a className="navbar-brand" href="">
+      <a className="navbar-brand" href="/">
         Navbar
       </a>
       <button
@@ -20,17 +20,17 @@ const Nav = () => (
       <div className="collapse navbar-collapse" id="navbarNav">
         <ul className="navbar-nav mr-auto">
           <li className="nav-item active">
-            <a className="nav-link" href="">
+            <a className="nav-link" href="/">
               Home <span class="sr-only">(current)</span>
             </a>
           </li>
           <li className="nav-item">
-            <a className="nav-link" href="">
+            <a className="nav-link" href="/">
               Features
             </a>
           </li>
           <li className="nav-item ">
-            <a className="nav-link" href="">
+            <a className="nav-link" href="/">
               Pricing
             </a>
           </li>
