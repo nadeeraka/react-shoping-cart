@@ -4,18 +4,25 @@ import Plist from "./components/pList";
 import Details from "./components/details";
 import Notfound from "./components/Notfound";
 import Cart from "./components/Cart";
-//import  from "./components/";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+//import Store from "./components/Store";
 //import  from "./components/";
 
 class App extends Component {
   render() {
     return (
       <>
-        <Nav />
-        <Plist />
-        <Details />
-        <Notfound />
-        <Cart />
+        <Router>
+          <>
+            <Nav />
+            <Switch>
+              <Route path="/" component={Plist} exact />
+              <Route path="/details" component={Details} />
+              <Route path="/cart" component={Cart} />
+              <Route component={Notfound} />
+            </Switch>
+          </>
+        </Router>
       </>
     );
   }

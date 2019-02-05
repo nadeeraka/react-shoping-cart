@@ -32,3 +32,10 @@ code {
 .text-light {
   color: var(--lightBlue);
 }
+.ll {
+  list-style: none;
+  color: #f3f3f3;
+}
+.li:hover {
+  color: #ffa400 !important;
+}
