@@ -5,7 +5,7 @@ import Details from "./components/details";
 import Notfound from "./components/Notfound";
 import Cart from "./components/Cart";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-//import Store from "./components/Store";
+import Product from "./components/product";
 //import  from "./components/";
 
 class App extends Component {
@@ -21,6 +21,7 @@ class App extends Component {
               <Route path="/cart" component={Cart} />
               <Route component={Notfound} />
             </Switch>
+            <Product />
           </>
         </Router>
       </>
