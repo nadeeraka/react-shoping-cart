@@ -1,10 +1,14 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
+import { ButttonContainer } from "./button";
 import styled from "styled-components";
 const Nav = () => (
   <div>
-    <nav className="navbar navbar-expand-lg navbar-primary bg-primary">
+    <NavWrapper className="navbar navbar-expand-lg navbar-dark ">
       <NavLink className="nav-link ll mr-6" to="/">
+        <span className="mr-3">
+          <i class="fas fa-fire" />
+        </span>
         Home
       </NavLink>
       <button
@@ -32,27 +36,16 @@ const Nav = () => (
           </li>
         </ul>
       </div>
-    </nav>
+    </NavWrapper>
   </div>
 );
 
-const ButttonContainer = styled.button`
-  text-transform: capitalize;
-  font-size: 1.4rem;
-  background: transparent;
-  border: 0.2rem solid var(--lightBlue);
-  color: var(--lightBlue);
-  border-radius: 0.5rem;
-  padding: 0.2rem 0.5rem;
-  cursor: pointer;
-  margin: 0.2rem 0.5rem 0.2rem 0;
-  transition: all 0.5s ease-in-out;
-  &:hover {
-    background: var(--lightBlue);
-    color: var(--mainBlue);
-  }
-  &:focus {
-    outline: none;
+const NavWrapper = styled.nav`
+  background: var(--mainBlue);
+  .nav-link {
+    color: var(--mainWhite) !important;
+    font-size: 1.6rem;
+    text-transform: capitalize;
   }
 `;
 export default Nav;
