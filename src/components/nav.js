@@ -7,7 +7,7 @@ const Nav = () => (
     <NavWrapper className="navbar navbar-expand-lg navbar-dark ">
       <NavLink className="nav-link ll mr-6" to="/">
         <span className="mr-3">
-          <i class="fas fa-fire" />
+          <i className="fas fa-fire" />
         </span>
         Home
       </NavLink>
