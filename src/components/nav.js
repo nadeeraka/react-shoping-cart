@@ -3,8 +3,8 @@ import { NavLink } from "react-router-dom";
 import styled from "styled-components";
 const Nav = () => (
   <div>
-    <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
-      <NavLink className="nav-link ll" to="/">
+    <nav className="navbar navbar-expand-lg navbar-primary bg-primary">
+      <NavLink className="nav-link ll mr-6" to="/">
         Home
       </NavLink>
       <button
@@ -20,23 +20,15 @@ const Nav = () => (
       </button>
       <div className="collapse navbar-collapse" id="navbarNav">
         <ul className="navbar-nav ml-auto">
-          <li className="nav-item active">
-            <NavLink className="nav-link ll ml-auto" to="/details">
-              Details
-            </NavLink>
-          </li>
           <li className="nav-item ml-5">
             <NavLink className="nav-link ll" to="/cart">
               <ButttonContainer>
-                <i className="fas fa-cart-plus" />
+                <span className="mr-2">
+                  <i className="fas fa-cart-plus " />
+                </span>
                 Cart
               </ButttonContainer>
             </NavLink>
-          </li>
-          <li className="nav-item ml-5">
-            <a className="nav-link" href="/">
-              Pricing
-            </a>
           </li>
         </ul>
       </div>
@@ -46,5 +38,7 @@ const Nav = () => (
 
 const ButttonContainer = styled.button`
   text-transform: capitalize;
+  font-size: 1.4rem;
+  background: transparent;
 `;
 export default Nav;
