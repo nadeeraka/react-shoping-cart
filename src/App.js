@@ -6,25 +6,28 @@ import Notfound from "./components/Notfound";
 import Cart from "./components/Cart";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Product from "./components/product";
+import { Provider } from "./components/context";
 //import  from "./components/";
 
 class App extends Component {
   render() {
     return (
-      <>
-        <Router>
-          <>
-            <Nav />
-            <Switch>
-              <Route path="/" component={Plist} exact />
-              <Route path="/details" component={Details} />
-              <Route path="/cart" component={Cart} />
-              <Route component={Notfound} />
-            </Switch>
-            <Product />
-          </>
-        </Router>
-      </>
+      <Provider>
+        <>
+          <Router>
+            <>
+              <Nav />
+              <Switch>
+                <Route path="/" component={Plist} exact />
+                <Route path="/details" component={Details} />
+                <Route path="/cart" component={Cart} />
+                <Route component={Notfound} />
+              </Switch>
+              <Product />
+            </>
+          </Router>
+        </>
+      </Provider>
     );
   }
 }
