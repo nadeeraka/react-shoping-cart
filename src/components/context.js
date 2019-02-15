@@ -16,7 +16,13 @@ export class Provider extends Component {
   };
   render() {
     return (
-      <Context.Provider value={(this.state, this.handelDetail, this.addToCart)}>
+      <Context.Provider
+        value={{
+          ...this.state,
+          handelDetail: this.handelDetail,
+          addToCart: this.addToCart
+        }}
+      >
         {this.props.children}
       </Context.Provider>
     );
@@ -24,3 +30,4 @@ export class Provider extends Component {
 }
 
 export const Consumer = Context.Consumer;
+// if error occure set ..this.state
