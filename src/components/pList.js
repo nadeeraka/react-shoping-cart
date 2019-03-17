@@ -6,8 +6,9 @@ class Plist extends Component {
   render() {
     return (
       <>
+        <h1 className="ht">Our products</h1>
         <div className="py-5">
-          <div className="container">
+          <div className="container-fluid">
             <div className="row">
               <Consumer>
                 {value => {

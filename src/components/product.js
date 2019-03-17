@@ -37,13 +37,14 @@ const Product = props => {
                   )}
                 </button>
               </div>
-            </div>
-            {/* card footer*/}
-            <div className="card-footer d-flex justify-content-between">
-              <p className="align-self-center mb-0">{props.pro.title}</p>
-              <h5 className="text-blue font-italic mb-0">
-                <span className="mr-1">$ {props.pro.price}</span>
-              </h5>
+
+              {/* card footer*/}
+              <div className="card-footer d-flex justify-content-between">
+                <p className="align-self-center mb-0">{props.pro.title}</p>
+                <h5 className="text-blue font-italic mb-0">
+                  <span className="mr-1">$ {props.pro.price}</span>
+                </h5>
+              </div>
             </div>
           </div>
         </div>

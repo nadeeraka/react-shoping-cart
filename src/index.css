@@ -5,7 +5,68 @@
   --mainDark: #232528;
   --mainYellow: #ffa400;
 }
+.container {
+  /* width: 100% !important; */
+}
+.prod {
+  /* height: 7300px !important; */
+}
+.card {
+  width: 200px;
+}
+.prod .card {
+  border-color: transparent;
+  transition: all 1s linear;
+}
+.prod .card-footer {
+  background: transparent;
+  border-top: transparent;
+  transition: all 1s linear;
+}
 
+.prod .card:hover {
+  border: 0.04rem solid rgba(0, 0, 0, 0.2);
+  box-shadow: 2px 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+.prod .card-footer:hover {
+  background: rgba(247, 247, 247);
+}
+.img-container {
+  position: relative;
+  overflow: hidden;
+}
+.card-img-top {
+  transition: all 1s linear;
+}
+.img-container:hover .card-img-top {
+  transform: scale(1.8);
+}
+.ht {
+  margin-top: 100px;
+  text-align: center;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: var(--mainBlue);
+  text-transform: inherit;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+.cart-btn {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding: 0.2rem 0.4rem;
+  /* margin-right: 20px; */
+  border: none;
+  background: var(--lightBlue);
+  color: var(--mainWhite);
+  font-size: 1.4rem;
+  border-radius: 0.5rem 0 0 0;
+  transform: translate(100%, 100%);
+}
+.img-container:hover .cart-btn {
+  transform: translate(0, 0);
+  cursor: pointer;
+}
 body {
   margin: 0 !important;
   padding: 0 !important;
