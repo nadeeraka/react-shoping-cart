@@ -1,10 +1,10 @@
-import React, { Component } from "react";
-import { Consumer } from "./context";
+import React from "react";
+//import { Consumer } from "./context";
 import { Link } from "react-router-dom";
-import styled from "styled-components";
+import PropTyps from "prop-types";
 
 const Product = props => {
-  const { id, title, img, price, inCart } = props;
+  //const { id, title, img, price, inCart } = props;
 
   return (
     <>
@@ -53,6 +53,11 @@ const Product = props => {
       )}
     </>
   );
+};
+Product.PropTyps = {
+  product: PropTyps.shape({
+    id: PropTyps.string
+  }).isRequired
 };
 
 export default Product;
