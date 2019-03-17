@@ -5,12 +5,6 @@
   --mainDark: #232528;
   --mainYellow: #ffa400;
 }
-.container {
-  /* width: 100% !important; */
-}
-.prod {
-  /* height: 7300px !important; */
-}
 .card {
   width: 200px;
 }
@@ -49,6 +43,9 @@
   text-transform: inherit;
   font-weight: 800;
   text-transform: uppercase;
+}
+.h {
+  color: #ffa400 !important;
 }
 .cart-btn {
   position: absolute;

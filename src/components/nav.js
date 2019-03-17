@@ -5,8 +5,8 @@ import styled from "styled-components";
 const Nav = () => (
   <div>
     <NavWrapper className="navbar navbar-expand-lg navbar-dark ">
-      <NavLink className="nav-link ll mr-6" to="/">
-        <span className="mr-3">
+      <NavLink className="nav-link ll mr-6 " to="/">
+        <span className="mr-3 h">
           <i className="fas fa-fire" />
         </span>
         Home

@@ -1,5 +1,4 @@
 import React from "react";
-//import { Consumer } from "./context";
 import { Link } from "react-router-dom";
 import PropTyps from "prop-types";
 
