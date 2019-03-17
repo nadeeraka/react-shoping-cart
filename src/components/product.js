@@ -11,7 +11,15 @@ const Product = props => {
       {props.pro ? (
         <div className="col-9 mx-auto col-6 col-3 my-3">
           <div className="card">
-            <div className="img-container p-5">{props.pro.id}</div>
+            <div className="img-container p-5" onClick={console.log("pp")}>
+              <Link to="/details">
+                <img
+                  src={props.pro.img}
+                  alt="product img"
+                  className="card-img-top"
+                />
+              </Link>
+            </div>
           </div>
         </div>
       ) : (
