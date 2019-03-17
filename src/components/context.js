@@ -8,15 +8,21 @@ export class Provider extends Component {
     details: detailProduct
   };
 
-  // handelDetail = () => {
-  //   console.log("handel details");
-  // };
-  // addToCart = () => {
-  //   console.log("add to cart");
-  // };
+  handelDetail = () => {
+    console.log("handel details");
+  };
+  addToCart = () => {
+    console.log("add to cart");
+  };
   render() {
     return (
-      <Context.Provider value={this.state}>
+      <Context.Provider
+        value={{
+          ...this.state,
+          handelDetail: this.handelDetail,
+          addToCart: this.addToCart
+        }}
+      >
         {this.props.children}
       </Context.Provider>
     );

@@ -9,8 +9,8 @@ const Product = props => {
   return (
     <>
       {props.pro ? (
-        <div className="raw">
-          <div className="col-9 mx-auto col-6 col-3 my-3">
+        <div className="prod">
+          <div className="col-9 mx-auto col-md-6 col-lg-6 my-3">
             <div className="card">
               <div
                 className="img-container p-5"
