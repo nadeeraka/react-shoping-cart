@@ -6,13 +6,22 @@ class Plist extends Component {
   render() {
     return (
       <>
-        <Consumer>
-          {value => {
-            return value.products.map(val => {
-              return <Product key={uuid()} data={val} />;
-            });
-          }}
-        </Consumer>
+        <div className="py-5">
+          <div className="container">
+            <div className="row">
+              <Consumer>
+                {value => {
+                  const { products } = value;
+                  console.log(products);
+                  return products.map(data => {
+                    //const { id, title, img, price, inCart } = data;
+                    return <Product key={uuid()} pro={data} />;
+                  });
+                }}
+              </Consumer>
+            </div>
+          </div>
+        </div>
       </>
     );
   }

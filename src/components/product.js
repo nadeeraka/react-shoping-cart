@@ -1,18 +1,24 @@
 import React, { Component } from "react";
-import Title from "./title";
+import { Consumer } from "./context";
+import { Link } from "react-router-dom";
+import styled from "styled-components";
 
-export default class Product extends Component {
-  render() {
-    return (
-      <>
-        <div className="py-5">
-          <div className="container">
-            <div className="row">
-              <Title name="available" title="products" />
-            </div>
+const Product = props => {
+  const { id, title, img, price, inCart } = props;
+
+  return (
+    <>
+      {props.pro ? (
+        <div className="col-9 mx-auto col-6 col-3 my-3">
+          <div className="card">
+            <div className="img-container p-5">{props.pro.id}</div>
           </div>
         </div>
-      </>
-    );
-  }
-}
+      ) : (
+        ""
+      )}
+    </>
+  );
+};
+
+export default Product;
