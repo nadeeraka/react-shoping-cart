@@ -84,6 +84,12 @@ code {
   letter-spacing: 0.3rem;
   text-transform: uppercase;
 }
+.details {
+  font-weight: bold;
+  text-transform: capitalize;
+  font-size: 1.4rem;
+  color: #2a2a72;
+}
 .text-blue {
   color: var(--mainBlue);
 }
