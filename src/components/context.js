@@ -30,8 +30,8 @@ export class Provider extends Component {
   handelDetail = () => {
     console.log("handel details");
   };
-  addToCart = () => {
-    console.log("add to cart");
+  addToCart = id => {
+    console.log(`add to cart ${id}`);
   };
   render() {
     return (
