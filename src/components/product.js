@@ -53,9 +53,10 @@ const Product = props => {
     </>
   );
 };
-Product.PropTyps = {
-  product: PropTyps.shape({
-    id: PropTyps.string
+//const { id, title, img, price, inCart } = props.pro;
+Product.propTyps = {
+  Product: PropTyps.shape({
+    id: PropTyps.bool
   }).isRequired
 };
 
