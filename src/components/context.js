@@ -4,10 +4,29 @@ const Context = React.createContext();
 
 export class Provider extends Component {
   state = {
-    products: storeProducts,
+    products: [],
     details: detailProduct
   };
+  componentDidMount = () => {
+    this.setProductCopy();
+    console.log(this.state.products);
+  };
 
+  setProductCopy = () => {
+    let tempProduct = [];
+
+    storeProducts.forEach(itam => {
+      const singaleProduct = { ...itam };
+      console.log(singaleProduct);
+      tempProduct = [...tempProduct, singaleProduct];
+    });
+
+    console.log(tempProduct);
+
+    return this.setState(() => {
+      return { products: tempProduct };
+    });
+  };
   handelDetail = () => {
     console.log("handel details");
   };

@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import PropTyps from "prop-types";
 
 const Product = props => {
-  //const { id, title, img, price, inCart } = props;
+  // const { id, title, img, price, inCart } = props.pro;
 
   return (
     <>
@@ -61,3 +61,5 @@ Product.propTyps = {
 };
 
 export default Product;
+//     </>
+//
