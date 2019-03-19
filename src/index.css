@@ -5,6 +5,7 @@
   --mainDark: #232528;
   --mainYellow: #ffa400;
 }
+
 .card {
   width: 200px;
 }
@@ -102,4 +103,25 @@ code {
 }
 .li:hover {
   color: #ffa400 !important;
+}
+.btn-y {
+  text-transform: capitalize;
+  font-size: 1.4rem;
+  background: transparent;
+  border: 0.2rem solid var(--lightBlue);
+  border-color: var(--mainYellow);
+  color: var(--mainYellow);
+
+  border-radius: 0.5rem;
+  padding: 0.2rem 0.5rem;
+  cursor: pointer;
+  margin: 0.2rem 0.5rem 0.2rem 0;
+  transition: all 0.5s ease-in-out;
+}
+.btn-y:hover {
+  background: var(--mainYellow);
+  color: var(--mainBlue);
+}
+.btn-y:focus {
+  outline: none;
 }
