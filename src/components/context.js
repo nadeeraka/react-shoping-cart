@@ -27,12 +27,20 @@ export class Provider extends Component {
       return { products: tempProduct };
     });
   };
-  handelDetail = () => {
-    console.log("handel details");
+  handelDetail = id => {
+    const hold = this.getItem(id);
+    return this.setState(() => {
+      return { details: hold };
+    });
   };
   addToCart = id => {
     console.log(`add to cart ${id}`);
   };
+  getItem = id => {
+    const product = this.state.products.find(res => res.id === id);
+    return product;
+  };
+
   render() {
     return (
       <Context.Provider
